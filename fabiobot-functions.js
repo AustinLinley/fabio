@@ -22,12 +22,12 @@ module.exports = {
     */
 
     // !commands
-    if (fb_input) {
+   (fb_input) {
 
-      if (fb_input.includes("!fish")) { retString = this.randomFishEmoji() }
-      if (fb_input.includes("!treat")) { retString = this.randomTreatEmoji() }
-      if (fb_input.includes("!purr")) { outputFlag = true; retString = "Purrr" }
-      if (fb_input.includes("!pineapple")) { outputFlag = true; retString = ":pineapple:" }
+      if (fb_input.includes("NES")) { retString = "Nintendo does what Segadon't. Ha see what i did there." }
+      if (fb_input.includes("!Game")) { retString = "Is it game time already?" }
+      if (fb_input.includes("!Bro")) { retString = "Bro Fist" }
+      if (fb_input.includes("!Sega")) { retString = "Can stay being a publisher" }
 
     }
 
@@ -46,41 +46,32 @@ module.exports = {
     return nowPlaying
   },
 
-    if (msg.includes("meow")) { emoji.push(this.randomCatEmoji()) }
-    if (msg.includes("chat")) { emoji.push(this.randomCatEmoji()) }
-    if (msg.includes("mew")) { emoji.push(this.randomCatEmoji()) }
-    if ((msg.includes("cat")) && (!(msg.includes("catbot")))) { emoji.push(this.randomCatEmoji()) }
-    if ((msg.includes("meow")) || (msg.includes("kitt"))) { emoji.push(this.randomCatEmoji()) }
-    console.log(emoji)
-    return emoji
-  },
-
   randomFabio: function() {
-    var catMeow = []
-    catMeow[0]  = "Meow?"
-    catMeow[1]  = "Purrrr"
-    catMeow[2]  = "Mew"
-    catMeow[3]  = "Mewtwo"
-    catMeow[4]  = "Mrrrrow"
-    catMeow[5]  = "Maowow"
-    catMeow[6]  = "Mrrrrrreow"
-    catMeow[7]  = "Ring-ding-ding-ding-dingeringeding! Wa-pa-pa-pa-pa-pa-pow!"
-    catMeow[8]  = "You have cat to be kitten me"
-    catMeow[9]  = "Prrrrrrrrr"
-    catMeow[10] = "Moo"
-    catMeow[11] = "I hate Mondays"
-    catMeow[12] = "Feed me"
-    catMeow[13] = "I love lasagna"
-    catMeow[14] = "I'll see you in another life, when we are both cats"
-    catMeow[15] = "Miau"
-    catMeow[16] = "Nyan"
-    catMeow[17] = "Meo"
-    catMeow[18] = "Miaou"
-    catMeow[19] = "Miao"
-    catMeow[20] = "мяу-мяу"
-    catMeow[21] = "мур-мур"
-    catMeow[22] = "Woof!"
-    catMeow[23] = "ニャー"
+    var fabioFabio = []
+    fabioFabio[0]  = "Fabio"
+    fabioFabio[1]  = "Super Mario Bros."
+    fabioFabio[2]  = "Super Mario Bros. 2"
+    fabioFabio[3]  = "Super Mario Bros. 3"
+    fabioFabio[4]  = "Mega Man"
+    fabioFabio[5]  = "Mega Man 2"
+    fabioFabio[6]  = "Mega Man 3"
+    fabioFabio[7]  = "Mega Man 4"
+    fabioFabio[8]  = "Mega Man 5"
+    fabioFabio[9]  = "Mega Man 6"
+    fabioFabio[10] = "The Legend of Zelda"
+    fabioFabio[11] = "Zelda II: The Adventure of Link"
+    fabioFabio[12] = "https://www.youtube.com/watch?v=xTElIdBy3vY"
+    fabioFabio[13] = "Adventure Island"
+    fabioFabio[14] = "Adventure Island II"
+    fabioFabio[15] = "Castlevania"
+    fabioFabio[16] = "Castlevania II: Simon's Quest"
+    fabioFabio[17] = "Castlevania III: Dracula's Curse"
+    fabioFabio[18] = "Donkey Kong - Arcade Classics Series"
+    fabioFabio[19] = "Donkey Kong"
+    fabioFabio[20] = "Donkey Kong Jr."
+    fabioFabio[21] = "Donkey Kong 3"
+    fabioFabio[22] = "Donkey Kong Jr. Math"
+    fabioFabio[23] = "Excitebike"
 
     var ret = Math.floor(Math.random() * fabioFabio.length)
     return fabioFabio[ret]
